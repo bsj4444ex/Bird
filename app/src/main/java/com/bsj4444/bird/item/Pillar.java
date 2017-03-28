@@ -13,14 +13,16 @@ import com.bsj4444.bird.View.MainView;
 public class Pillar {
 
     private int x,y;
-    private int width=50;
-    private int height=100;
+    private int width;
+    private int height;
 
     public Pillar(){}
 
     public Pillar(int x,int y){
         this.x=x;
         this.y=y;
+        width = MainView.WIDTH/5;
+        height = MainView.HEIGHT/5;
     }
 
     public int getX() {

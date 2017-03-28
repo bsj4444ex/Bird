@@ -12,6 +12,15 @@ public class Bird {
     private int width,height;
     private Bitmap birdPicture;
     private boolean up;
+    private int speech;
+
+    public int getSpeech() {
+        return speech;
+    }
+
+    public void setSpeech(int speech) {
+        this.speech = speech;
+    }
 
     public boolean isUp() {
         return up;
@@ -25,6 +34,7 @@ public class Bird {
         this.x=x;
         this.y=y;
         this.birdPicture=birdPicture;
+        this.speech=0;
     }
 
     public int getX() {

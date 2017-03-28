@@ -171,7 +171,7 @@ public class MainView extends SurfaceView implements SurfaceHolder.Callback,Runn
         try {
             canvas = holder.lockCanvas();
             canvas.drawBitmap(bg,bgX,bgY,null);
-            Log.d("bei","drawing");
+            //Log.d("bei","drawing");
             if (pillars.size()==0){
                 int x=WIDTH;
                 int y=getRandom();
@@ -218,7 +218,7 @@ public class MainView extends SurfaceView implements SurfaceHolder.Callback,Runn
                 if (p.getX()==WIDTH/6){
                     pillars.add(new Pillar(WIDTH,getRandom()));
                 }
-                if (p.getX()<=-50){
+                if (p.getX()<=-WIDTH/5){
                     pillars.remove(p);
                 }
             }
